@@ -1,0 +1,50 @@
+*essentials.txt* essential commands for everyday editing
+
+	#######
+	#        ####   ####  ###### #    # ##### #   ##   #       ####
+	#       #      #      #      ##   #   #   #  #  #  #      #
+	#####    ####   ####  #####  # #  #   #   # #    # #       ####
+	#            #      # #      #  # #   #   # ###### #           #
+	#       #    # #    # #      #   ##   #   # #    # #      #    #
+	#######  ####   ####  ###### #    #   #   # #    # ######  ####
+
+==============================================================================
+Contents                                                    *essentials-content*
+
+    1. About	    	|essentials-introduction|
+    2. Usage         	|essentials-usage|
+    3. Configuration    |essentials-configuration|
+    4. Customization    |essentials-customization|
+    5. Contributing     |essentials-contributing|
+    6. Credits          |essentials-credits|
+    7. License          |essentials-license|
+
+
+==============================================================================
+1. About					                                     *essentials-introduction*
+
+Vim-essentials provides essential functionalities inside vim editor
+
+==============================================================================
+2. Usage						                                          *essentials-usage*
+
+This section explains all available commands provided by essentials and
+their usage.
+
+
+						                                      *essentials-:RemoveWhiteSpace*
+
+:RemoveWhiteSpace		Remove all white spaces in the current file
+
+==============================================================================
+3. Configuration				      *essentials-configuration*
+
+					                                	*essentials-:RemoveWhiteSpaceConfig*
+
+Set file types to ignore white space highlight. Default to []
+>
+	let g:essentials_remove_whitespace_ignore_filetypes = ['text', 'markdown']
+<
+
+
+vim:tw=78:ts=2:et:sts=2:sw=2:ft=help
