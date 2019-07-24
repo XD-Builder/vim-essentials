@@ -87,9 +87,10 @@ def format_answers(answers):
               + 'Score: ' + str(score(a)) + '\n\n'
               + a['body'] for a in answers]
     split_text = [html2list(b) for b in bodies]
-    text_list = []
-    map(text_list.extend, split_text)
-    return text_list
+    # text_list = []
+    # map(text_list.extend, split_text)
+    # print(text_list[:200])
+    return split_text
 
 def get_content(url):
     try:
@@ -146,7 +147,8 @@ for i, q in enumerate(questions):
     vim.current.buffer.append("Q%d. %s (%d answers)" % (i+1, title, answer_count))
     vim.current.buffer.append(html2list(q['body']))
     answers = format_answers(q['answers'])
-    vim.current.buffer.append(answers)
+    for i in answers:
+        vim.current.buffer.append(i)
 
 EOF
     " Setting fold so it can be used for better view

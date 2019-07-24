@@ -43,7 +43,7 @@ their usage.
                                 Remove all white spaces in the current file.
                                 It can be run in visual mode and normal mode
 
-						                                  *EssentialsStackOverflow-Usage*
+						                                    *EssentialsStackOverflow-Usage*
 
 :EssentialsStackOverflow
                                 Makes an call to StackExchange for
@@ -54,7 +54,7 @@ their usage.
 ==============================================================================
 3. Configuration				      *essentials-configuration*
 
-					                                 *EssentialsRemoveWhiteSpace-Config*
+ 					                                 *EssentialsRemoveWhiteSpace-Config*
 
 Set file types to ignore white space highlight. Default to []
 >
