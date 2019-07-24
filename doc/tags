@@ -1,5 +1,7 @@
-essentials-:RemoveWhiteSpace	essentials.txt	/*essentials-:RemoveWhiteSpace*
-essentials-:RemoveWhiteSpaceConfig	essentials.txt	/*essentials-:RemoveWhiteSpaceConfig*
+EssentialsRemoveWhiteSpace-Config	essentials.txt	/*EssentialsRemoveWhiteSpace-Config*
+EssentialsRemoveWhiteSpace-Usage	essentials.txt	/*EssentialsRemoveWhiteSpace-Usage*
+EssentialsStackOverflow-Usage	essentials.txt	/*EssentialsStackOverflow-Usage*
+essential-naming-convention	essentials.txt	/*essential-naming-convention*
 essentials-configuration	essentials.txt	/*essentials-configuration*
 essentials-content	essentials.txt	/*essentials-content*
 essentials-introduction	essentials.txt	/*essentials-introduction*

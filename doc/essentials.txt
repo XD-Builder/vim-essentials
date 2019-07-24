@@ -11,8 +11,8 @@
 ==============================================================================
 Contents                                                    *essentials-content*
 
-    1. About	    	|essentials-introduction|
-    2. Usage         	|essentials-usage|
+    1. About	    	    |essentials-introduction| |essentials-naming-convention|
+    2. Usage         	  |essentials-usage|
     3. Configuration    |essentials-configuration|
     4. Customization    |essentials-customization|
     5. Contributing     |essentials-contributing|
@@ -23,7 +23,12 @@ Contents                                                    *essentials-content*
 ==============================================================================
 1. About					                                     *essentials-introduction*
 
-Vim-essentials provides essential functionalities inside vim editor
+Vim-essentials provides essential functionalities inside vim editor.
+
+                                                   *essential-naming-convention*
+Naming conventions for autoload folder:
+Functions with first letter uppercase is to be exported and lowercase to
+be used internally.
 
 ==============================================================================
 2. Usage						                                          *essentials-usage*
@@ -32,14 +37,24 @@ This section explains all available commands provided by essentials and
 their usage.
 
 
-						                                      *essentials-:RemoveWhiteSpace*
+						                                 *EssentialsRemoveWhiteSpace-Usage*
 
-:RemoveWhiteSpace		Remove all white spaces in the current file
+:EssentialsRemoveWhiteSpace
+                                Remove all white spaces in the current file.
+                                It can be run in visual mode and normal mode
+
+						                                  *EssentialsStackOverflow-Usage*
+
+:EssentialsStackOverflow
+                                Makes an call to StackExchange for
+                                Stackoverflow questions and answers and put
+                                the response in folded format and allows
+                                users to press <space> to fold or unfold
 
 ==============================================================================
 3. Configuration				      *essentials-configuration*
 
-					                                	*essentials-:RemoveWhiteSpaceConfig*
+					                                 *EssentialsRemoveWhiteSpace-Config*
 
 Set file types to ignore white space highlight. Default to []
 >
