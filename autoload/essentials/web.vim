@@ -1,4 +1,4 @@
-" {{{ Initialization
+" {{{ Google Initialization 
 if !exists("g:essentials_web_google_open")
   if has("win32")
     let g:essentials_web_google_open = "start"
@@ -15,7 +15,7 @@ endif
 
 " }}}
 
-" {{{1 Exposed Functions
+" {{{1 Global Functions
 " {{{2 StackOverflow
 function! essentials#web#StackOverflow(...)
     " If we don't have python three we will stop here
@@ -155,7 +155,7 @@ EOF
 	" Each line will be evaluation for expression
     setlocal foldmethod=expr
 	" Expression used to match for folds
-    setlocal foldexpr=essentials#utils#markdown_fold()
+    setlocal foldexpr=essentials#utils#stackoverflow_fold_expr()
 	" Text shown on top of the fold
     setlocal foldtext=getline(v:foldstart)
     setlocal foldcolumn=1

@@ -28,22 +28,21 @@ augroup END
 " }}}
 
 " {{{ EssentialsWebGoogle Setup
-" Set configurable command for calling google
+" Sets default command if it's not set already, in the default case
+" it will be EssentialsGoogle and EssentialsGooglef commands
 if !exists("g:essentials_web_google_command")
-    let g:essentials_web_google_command = "Google"
+    let g:essentials_web_google_command = "EssentialsGoogle"
 endif
-
 if !exists("g:essentials_web_googe_with_file_type_command")
     let g:essentials_web_googe_with_file_type_command = g:essentials_web_google_command . "f"
 endif
-
 " }}}
 
 " {{{ Commands
-" In file's entire range, replace space from start of the file to the end.
+" Defines four essentials command for removing whitespace, searching
+" stackoverflow, or goolging with filetype or not
 command! -range=% EssentialsRemoveWhiteSpace call essentials#editor#RemoveWhiteSpace(<line1>,<line2>)
 command! -nargs=* -range EssentialsStackOverflow call essentials#web#StackOverflow(<f-args>)
-
 execute "command! -nargs=* -range ". g:essentials_web_google_command
     \ ." :call essentials#web#Google('' ,<f-args>)"
 execute "command! -nargs=* -range ". g:essentials_web_googe_with_file_type_command

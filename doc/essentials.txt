@@ -48,8 +48,20 @@ their usage.
 :EssentialsStackOverflow
                                 Makes an call to StackExchange for
                                 Stackoverflow questions and answers and put
-                                the response in folded format and allows
-                                users to press <space> to fold or unfold
+                                the response in a buffer window with custom
+                                format and <space> to fold or unfold
+
+						                                           *EssentialsGoogle-Usage*
+:EssentialsGoogle
+                                Search word under cursor in normal mode or
+                                word under selection in visual mode in a new
+                                browser tab.
+
+						                                          *EssentialsGooglef-Usage*
+:EssentialsGooglef
+                                Search word under cursor in normal mode or
+                                word under selection in visual mode prefixed
+                                with its file type in a new browser tab.
 
 ==============================================================================
 3. Configuration				      *essentials-configuration*
