@@ -1,5 +1,13 @@
 # vim-essentials
-Essential tools for vim
+Essential commands for vim. 
+* Commands can be run with:
+```vim
+:Essentials*
+```
+* Find help with:
+```vim
+:help essentials.txt
+```
 
 ## Installation
 If you use [Vundle](https://github.com/gmarik/vundle), add the following lines to your `~/.vimrc`:
@@ -29,7 +37,3 @@ See [Essentials Help Doc](./doc/essentials.txt)
 1. Remove White Spaces in visual selection mode and normal mode.
 2. Open Google inside Vim in visual selection mode and normal mode.
 3. Query texts against StackOverflow inside Vim and open a tab with relevant questions and answers with folds
-
-## Future TODOs
-1. Refactor, add new essential features, automate build tasks with Makefile, and write tests to increase coverage.
-
